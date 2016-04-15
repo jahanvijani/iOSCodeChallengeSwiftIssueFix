@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="65a-0y-Km1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Cities of United Kingdom-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="FlingTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DFd-yW-p4O">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedTableViewCellIdentifier" rowHeight="120" id="Ouu-k3-ZJ7" customClass="FeedTableViewCell" customModule="FlingTestApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ouu-k3-ZJ7" id="0oh-Yc-l9G">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xev-Id-lfi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMn-90-Cru">
+                                                    <rect key="frame" x="16" y="0.0" width="568" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uPF-ch-gwn">
+                                                    <rect key="frame" x="290" y="50" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uPF-ch-gwn" firstAttribute="centerY" secondItem="Xev-Id-lfi" secondAttribute="centerY" id="96Z-cb-z7o"/>
+                                                <constraint firstItem="Xev-Id-lfi" firstAttribute="top" secondItem="0oh-Yc-l9G" secondAttribute="top" id="AFY-Fn-NO1"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xev-Id-lfi" secondAttribute="bottom" id="Anc-gg-yA1"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xev-Id-lfi" secondAttribute="trailing" id="LVy-Ip-R4k"/>
+                                                <constraint firstItem="Xev-Id-lfi" firstAttribute="leading" secondItem="0oh-Yc-l9G" secondAttribute="leading" id="bCh-Yh-O0a"/>
+                                                <constraint firstItem="RMn-90-Cru" firstAttribute="leading" secondItem="0oh-Yc-l9G" secondAttribute="leading" constant="16" id="gxD-ix-3cf"/>
+                                                <constraint firstAttribute="trailing" secondItem="RMn-90-Cru" secondAttribute="trailing" constant="16" id="pA4-Nc-yb9"/>
+                                                <constraint firstItem="uPF-ch-gwn" firstAttribute="centerX" secondItem="Xev-Id-lfi" secondAttribute="centerX" id="wei-tJ-umm"/>
+                                                <constraint firstItem="RMn-90-Cru" firstAttribute="top" secondItem="Xev-Id-lfi" secondAttribute="top" id="xV1-5I-DxO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="loadingIndicator" destination="uPF-ch-gwn" id="riC-zn-D1X"/>
+                                            <outlet property="photoImageView" destination="Xev-Id-lfi" id="S57-Vl-QbS"/>
+                                            <outlet property="photoLabel" destination="RMn-90-Cru" id="q6f-k2-sv9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Fcr-WJ-LE6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6QB-Cb-j0z"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DFd-yW-p4O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q31-48-IJC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DFd-yW-p4O" secondAttribute="bottom" id="W6S-QY-n34"/>
+                            <constraint firstItem="DFd-yW-p4O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a8T-4k-WbU"/>
+                            <constraint firstAttribute="trailing" secondItem="DFd-yW-p4O" secondAttribute="trailing" id="c1f-m3-G3Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cities of United Kingdom" id="s6y-9R-env"/>
+                    <connections>
+                        <outlet property="tableView" destination="DFd-yW-p4O" id="aU6-57-jGv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760" y="969"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eE3-nH-Cyp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="65a-0y-Km1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cUW-Ly-0kN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hN9-j0-TSx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnP-n7-FO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="969"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDAEF6E51CB9C9AE00D9EC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF6E41CB9C9AE00D9EC61 /* AppDelegate.swift */; };
+		EDAEF6EA1CB9C9AE00D9EC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAEF6E81CB9C9AE00D9EC61 /* Main.storyboard */; };
+		EDAEF6ED1CB9C9AE00D9EC61 /* FlingTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF6EB1CB9C9AE00D9EC61 /* FlingTestApp.xcdatamodeld */; };
+		EDAEF6EF1CB9C9AE00D9EC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAEF6EE1CB9C9AE00D9EC61 /* Assets.xcassets */; };
+		EDAEF6F21CB9C9AE00D9EC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAEF6F01CB9C9AE00D9EC61 /* LaunchScreen.storyboard */; };
+		EDAEF6FD1CB9C9AE00D9EC61 /* FlingTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF6FC1CB9C9AE00D9EC61 /* FlingTestAppTests.swift */; };
+		EDAEF7081CB9C9AE00D9EC61 /* FlingTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF7071CB9C9AE00D9EC61 /* FlingTestAppUITests.swift */; };
+		EDAEF71F1CB9CBC700D9EC61 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF71B1CB9CBC700D9EC61 /* Feed.swift */; };
+		EDAEF7231CB9CC6800D9EC61 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF7221CB9CC6800D9EC61 /* FeedTableViewCell.swift */; };
+		EDAEF7251CB9CEC400D9EC61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF7241CB9CEC400D9EC61 /* ViewController.swift */; };
+		EDAEF7281CB9D52B00D9EC61 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF7271CB9D52B00D9EC61 /* Constant.swift */; };
+		EDAEF72A1CB9D57700D9EC61 /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF7291CB9D57700D9EC61 /* RestAPIManager.swift */; };
+		EDAEF72C1CB9D58D00D9EC61 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF72B1CB9D58D00D9EC61 /* FeedDataManager.swift */; };
+		EDAEF7301CBA7D1D00D9EC61 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF72F1CBA7D1D00D9EC61 /* Reachability.m */; };
+		EDAEF7361CBA80E200D9EC61 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEF7351CBA80E200D9EC61 /* CoreDataManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDAEF6F91CB9C9AE00D9EC61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDAEF6D91CB9C9AE00D9EC61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDAEF6E01CB9C9AE00D9EC61;
+			remoteInfo = FlingTestApp;
+		};
+		EDAEF7041CB9C9AE00D9EC61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDAEF6D91CB9C9AE00D9EC61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDAEF6E01CB9C9AE00D9EC61;
+			remoteInfo = FlingTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDAEF6E11CB9C9AE00D9EC61 /* FlingTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlingTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAEF6E41CB9C9AE00D9EC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDAEF6E91CB9C9AE00D9EC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDAEF6EC1CB9C9AE00D9EC61 /* FlingTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlingTestApp.xcdatamodel; sourceTree = "<group>"; };
+		EDAEF6EE1CB9C9AE00D9EC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDAEF6F11CB9C9AE00D9EC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDAEF6F31CB9C9AE00D9EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDAEF6F81CB9C9AE00D9EC61 /* FlingTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlingTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAEF6FC1CB9C9AE00D9EC61 /* FlingTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlingTestAppTests.swift; sourceTree = "<group>"; };
+		EDAEF6FE1CB9C9AE00D9EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDAEF7031CB9C9AE00D9EC61 /* FlingTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlingTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAEF7071CB9C9AE00D9EC61 /* FlingTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlingTestAppUITests.swift; sourceTree = "<group>"; };
+		EDAEF7091CB9C9AE00D9EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDAEF71B1CB9CBC700D9EC61 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feed.swift; path = Model/Feed.swift; sourceTree = "<group>"; };
+		EDAEF7221CB9CC6800D9EC61 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableViewCell.swift; path = CustomTableViewCells/FeedTableViewCell.swift; sourceTree = "<group>"; };
+		EDAEF7241CB9CEC400D9EC61 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewControllers/ViewController.swift; sourceTree = "<group>"; };
+		EDAEF7271CB9D52B00D9EC61 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EDAEF7291CB9D57700D9EC61 /* RestAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestAPIManager.swift; path = Network/RestAPIManager.swift; sourceTree = "<group>"; };
+		EDAEF72B1CB9D58D00D9EC61 /* FeedDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedDataManager.swift; path = Network/FeedDataManager.swift; sourceTree = "<group>"; };
+		EDAEF72D1CBA7D1D00D9EC61 /* FlingTestApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlingTestApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EDAEF72E1CBA7D1D00D9EC61 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Network/Reachability.h; sourceTree = "<group>"; };
+		EDAEF72F1CBA7D1D00D9EC61 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Network/Reachability.m; sourceTree = "<group>"; };
+		EDAEF7351CBA80E200D9EC61 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataManager.swift; path = ViewControllers/CoreDataManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDAEF6DE1CB9C9AE00D9EC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAEF6F51CB9C9AE00D9EC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAEF7001CB9C9AE00D9EC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDAEF6D81CB9C9AE00D9EC61 = {
+			isa = PBXGroup;
+			children = (
+				EDAEF6E31CB9C9AE00D9EC61 /* FlingTestApp */,
+				EDAEF6FB1CB9C9AE00D9EC61 /* FlingTestAppTests */,
+				EDAEF7061CB9C9AE00D9EC61 /* FlingTestAppUITests */,
+				EDAEF6E21CB9C9AE00D9EC61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDAEF6E21CB9C9AE00D9EC61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEF6E11CB9C9AE00D9EC61 /* FlingTestApp.app */,
+				EDAEF6F81CB9C9AE00D9EC61 /* FlingTestAppTests.xctest */,
+				EDAEF7031CB9C9AE00D9EC61 /* FlingTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDAEF6E31CB9C9AE00D9EC61 /* FlingTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEF7271CB9D52B00D9EC61 /* Constant.swift */,
+				EDAEF6EB1CB9C9AE00D9EC61 /* FlingTestApp.xcdatamodeld */,
+				EDAEF7151CB9CA9E00D9EC61 /* Model */,
+				EDAEF7261CB9D21D00D9EC61 /* Network */,
+				EDAEF7171CB9CAB100D9EC61 /* CustomTableViewCells */,
+				EDAEF7161CB9CAA700D9EC61 /* ViewControllers */,
+				EDAEF6E41CB9C9AE00D9EC61 /* AppDelegate.swift */,
+				EDAEF6E81CB9C9AE00D9EC61 /* Main.storyboard */,
+				EDAEF6EE1CB9C9AE00D9EC61 /* Assets.xcassets */,
+				EDAEF6F01CB9C9AE00D9EC61 /* LaunchScreen.storyboard */,
+				EDAEF6F31CB9C9AE00D9EC61 /* Info.plist */,
+			);
+			path = FlingTestApp;
+			sourceTree = "<group>";
+		};
+		EDAEF6FB1CB9C9AE00D9EC61 /* FlingTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEF6FC1CB9C9AE00D9EC61 /* FlingTestAppTests.swift */,
+				EDAEF6FE1CB9C9AE00D9EC61 /* Info.plist */,
+			);
+			path = FlingTestAppTests;
+			sourceTree = "<group>";
+		};
+		EDAEF7061CB9C9AE00D9EC61 /* FlingTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEF7071CB9C9AE00D9EC61 /* FlingTestAppUITests.swift */,
+				EDAEF7091CB9C9AE00D9EC61 /* Info.plist */,
+			);
+			path = FlingTestAppUITests;
+			sourceTree = "<group>";
+		};
+		EDAEF7151CB9CA9E00D9EC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEF71B1CB9CBC700D9EC61 /* Feed.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EDAEF7161CB9CAA700D9EC61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEF7241CB9CEC400D9EC61 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EDAEF7171CB9CAB100D9EC61 /* CustomTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEF7221CB9CC6800D9EC61 /* FeedTableViewCell.swift */,
+			);
+			name = CustomTableViewCells;
+			sourceTree = "<group>";
+		};
+		EDAEF7261CB9D21D00D9EC61 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEF72E1CBA7D1D00D9EC61 /* Reachability.h */,
+				EDAEF72F1CBA7D1D00D9EC61 /* Reachability.m */,
+				EDAEF7291CB9D57700D9EC61 /* RestAPIManager.swift */,
+				EDAEF72B1CB9D58D00D9EC61 /* FeedDataManager.swift */,
+				EDAEF72D1CBA7D1D00D9EC61 /* FlingTestApp-Bridging-Header.h */,
+				EDAEF7351CBA80E200D9EC61 /* CoreDataManager.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDAEF6E01CB9C9AE00D9EC61 /* FlingTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDAEF70C1CB9C9AE00D9EC61 /* Build configuration list for PBXNativeTarget "FlingTestApp" */;
+			buildPhases = (
+				EDAEF6DD1CB9C9AE00D9EC61 /* Sources */,
+				EDAEF6DE1CB9C9AE00D9EC61 /* Frameworks */,
+				EDAEF6DF1CB9C9AE00D9EC61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlingTestApp;
+			productName = FlingTestApp;
+			productReference = EDAEF6E11CB9C9AE00D9EC61 /* FlingTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDAEF6F71CB9C9AE00D9EC61 /* FlingTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDAEF70F1CB9C9AE00D9EC61 /* Build configuration list for PBXNativeTarget "FlingTestAppTests" */;
+			buildPhases = (
+				EDAEF6F41CB9C9AE00D9EC61 /* Sources */,
+				EDAEF6F51CB9C9AE00D9EC61 /* Frameworks */,
+				EDAEF6F61CB9C9AE00D9EC61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDAEF6FA1CB9C9AE00D9EC61 /* PBXTargetDependency */,
+			);
+			name = FlingTestAppTests;
+			productName = FlingTestAppTests;
+			productReference = EDAEF6F81CB9C9AE00D9EC61 /* FlingTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDAEF7021CB9C9AE00D9EC61 /* FlingTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDAEF7121CB9C9AE00D9EC61 /* Build configuration list for PBXNativeTarget "FlingTestAppUITests" */;
+			buildPhases = (
+				EDAEF6FF1CB9C9AE00D9EC61 /* Sources */,
+				EDAEF7001CB9C9AE00D9EC61 /* Frameworks */,
+				EDAEF7011CB9C9AE00D9EC61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDAEF7051CB9C9AE00D9EC61 /* PBXTargetDependency */,
+			);
+			name = FlingTestAppUITests;
+			productName = FlingTestAppUITests;
+			productReference = EDAEF7031CB9C9AE00D9EC61 /* FlingTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDAEF6D91CB9C9AE00D9EC61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jahanvi Vyas";
+				TargetAttributes = {
+					EDAEF6E01CB9C9AE00D9EC61 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EDAEF6F71CB9C9AE00D9EC61 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EDAEF6E01CB9C9AE00D9EC61;
+					};
+					EDAEF7021CB9C9AE00D9EC61 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EDAEF6E01CB9C9AE00D9EC61;
+					};
+				};
+			};
+			buildConfigurationList = EDAEF6DC1CB9C9AE00D9EC61 /* Build configuration list for PBXProject "FlingTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDAEF6D81CB9C9AE00D9EC61;
+			productRefGroup = EDAEF6E21CB9C9AE00D9EC61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDAEF6E01CB9C9AE00D9EC61 /* FlingTestApp */,
+				EDAEF6F71CB9C9AE00D9EC61 /* FlingTestAppTests */,
+				EDAEF7021CB9C9AE00D9EC61 /* FlingTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDAEF6DF1CB9C9AE00D9EC61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAEF6F21CB9C9AE00D9EC61 /* LaunchScreen.storyboard in Resources */,
+				EDAEF6EF1CB9C9AE00D9EC61 /* Assets.xcassets in Resources */,
+				EDAEF6EA1CB9C9AE00D9EC61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAEF6F61CB9C9AE00D9EC61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAEF7011CB9C9AE00D9EC61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDAEF6DD1CB9C9AE00D9EC61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAEF7281CB9D52B00D9EC61 /* Constant.swift in Sources */,
+				EDAEF7251CB9CEC400D9EC61 /* ViewController.swift in Sources */,
+				EDAEF72A1CB9D57700D9EC61 /* RestAPIManager.swift in Sources */,
+				EDAEF7231CB9CC6800D9EC61 /* FeedTableViewCell.swift in Sources */,
+				EDAEF7301CBA7D1D00D9EC61 /* Reachability.m in Sources */,
+				EDAEF7361CBA80E200D9EC61 /* CoreDataManager.swift in Sources */,
+				EDAEF6ED1CB9C9AE00D9EC61 /* FlingTestApp.xcdatamodeld in Sources */,
+				EDAEF71F1CB9CBC700D9EC61 /* Feed.swift in Sources */,
+				EDAEF72C1CB9D58D00D9EC61 /* FeedDataManager.swift in Sources */,
+				EDAEF6E51CB9C9AE00D9EC61 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAEF6F41CB9C9AE00D9EC61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAEF6FD1CB9C9AE00D9EC61 /* FlingTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAEF6FF1CB9C9AE00D9EC61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAEF7081CB9C9AE00D9EC61 /* FlingTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDAEF6FA1CB9C9AE00D9EC61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDAEF6E01CB9C9AE00D9EC61 /* FlingTestApp */;
+			targetProxy = EDAEF6F91CB9C9AE00D9EC61 /* PBXContainerItemProxy */;
+		};
+		EDAEF7051CB9C9AE00D9EC61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDAEF6E01CB9C9AE00D9EC61 /* FlingTestApp */;
+			targetProxy = EDAEF7041CB9C9AE00D9EC61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDAEF6E81CB9C9AE00D9EC61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDAEF6E91CB9C9AE00D9EC61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDAEF6F01CB9C9AE00D9EC61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDAEF6F11CB9C9AE00D9EC61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDAEF70A1CB9C9AE00D9EC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDAEF70B1CB9C9AE00D9EC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDAEF70D1CB9C9AE00D9EC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FlingTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.FlingTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FlingTestApp/FlingTestApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDAEF70E1CB9C9AE00D9EC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FlingTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.FlingTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FlingTestApp/FlingTestApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		EDAEF7101CB9C9AE00D9EC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlingTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.FlingTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlingTestApp.app/FlingTestApp";
+			};
+			name = Debug;
+		};
+		EDAEF7111CB9C9AE00D9EC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlingTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.FlingTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlingTestApp.app/FlingTestApp";
+			};
+			name = Release;
+		};
+		EDAEF7131CB9C9AE00D9EC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlingTestAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.FlingTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlingTestApp;
+			};
+			name = Debug;
+		};
+		EDAEF7141CB9C9AE00D9EC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlingTestAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.FlingTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlingTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDAEF6DC1CB9C9AE00D9EC61 /* Build configuration list for PBXProject "FlingTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAEF70A1CB9C9AE00D9EC61 /* Debug */,
+				EDAEF70B1CB9C9AE00D9EC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDAEF70C1CB9C9AE00D9EC61 /* Build configuration list for PBXNativeTarget "FlingTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAEF70D1CB9C9AE00D9EC61 /* Debug */,
+				EDAEF70E1CB9C9AE00D9EC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDAEF70F1CB9C9AE00D9EC61 /* Build configuration list for PBXNativeTarget "FlingTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAEF7101CB9C9AE00D9EC61 /* Debug */,
+				EDAEF7111CB9C9AE00D9EC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDAEF7121CB9C9AE00D9EC61 /* Build configuration list for PBXNativeTarget "FlingTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAEF7131CB9C9AE00D9EC61 /* Debug */,
+				EDAEF7141CB9C9AE00D9EC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDAEF6EB1CB9C9AE00D9EC61 /* FlingTestApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDAEF6EC1CB9C9AE00D9EC61 /* FlingTestApp.xcdatamodel */,
+			);
+			currentVersion = EDAEF6EC1CB9C9AE00D9EC61 /* FlingTestApp.xcdatamodel */;
+			path = FlingTestApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EDAEF6D91CB9C9AE00D9EC61 /* Project object */;
+}
